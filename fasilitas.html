@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fasilitas Kami - EduVerse Learning Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(45deg, #1e40af, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-link-active { color: #3b82f6; font-weight: 600; border-bottom: 2px solid #3b82f6; }
+        .tab-button.active { background-color: #3b82f6; color: white; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-atom text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-blue-700">EduVerse</h1>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="tentang.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Tentang</a>
+                <a href="program.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Program</a>
+                <a href="fasilitas.html" class="text-sm font-medium transition duration-300 nav-link-active">Fasilitas</a>
+                <a href="kontak.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Kontak</a>
+            </nav>
+            <div id="authArea"></div>
+        </div>
+    </header>
+
+    <main class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold gradient-text mb-3">Jelajahi Fasilitas Kami</h1>
+                <p class="text-lg text-gray-600">Temukan ruang dan sarana pendukung pembelajaran di setiap lantai Gedung EduVerse.</p>
+            </div>
+
+            <div class="mb-8 border-b border-gray-200">
+                <nav class="flex flex-wrap -mb-px" id="floor-tabs">
+                    <button class="tab-button active text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="1">Lantai 1</button>
+                    <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="2">Lantai 2</button>
+                    <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="3">Lantai 3</button>
+                    <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="4">Lantai 4</button>
+                    <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="5">Lantai 5</button>
+                    <button class="tab-button text-gray-600 py-4 px-6 block hover:text-blue-600 focus:outline-none" data-floor="6">Lantai 6</button>
+                </nav>
+            </div>
+
+            <div id="facilities-content">
+                <div id="floor-1" class="tab-content active">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 1: Area Publik & Rekreasi Alam</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Lobby Utama:</strong> Pusat informasi dan registrasi. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Taman Terbuka:</strong> Area relaksasi dan pembelajaran berbasis alam. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Greenhouse:</strong> Edukasi dan konservasi tanaman. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Mini Zoo:</strong> Edukasi satwa untuk anak-anak. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Equestrian:</strong> Layanan edukasi berkuda untuk terapi dan rekreasi. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Cafetaria:</strong> Layanan makanan dan minuman sehat. </div>
+                    </div>
+                </div>
+                <div id="floor-2" class="tab-content">
+                     <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 2: Pelatihan & Pengembangan Pendidik</h3>
+                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Pelatihan Guru:</strong> Pengembangan kompetensi pedagogik. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Simulasi Pembelajaran:</strong> Praktik mengajar dan microteaching. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Montessori Class:</strong> Pembelajaran berbasis metode montessori. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Robotic:</strong> Eksplorasi teknologi dan pemrograman robot. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Seminar:</strong> Penyelenggaraan kegiatan ilmiah dan diskusi panel. </div>
+                    </div>
+                </div>
+                 <div id="floor-3" class="tab-content">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 3: Literasi, Kreativitas & Eksplorasi</h3>
+                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Planetarium:</strong> Layanan edukasi astronomi dengan proyeksi digital. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang VR & AR:</strong> Pembelajaran imersif dengan Virtual & Augmented Reality. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Perpustakaan Cetak & Digital:</strong> Akses terintegrasi ke buku fisik dan e-book. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Theatre Room:</strong> Ruang pertunjukan drama dan seni. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Laboratorium:</strong> Eksperimen dan penelitian sains. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Inklusif:</strong> Layanan pendidikan ramah disabilitas. </div>
+                    </div>
+                </div>
+                <div id="floor-4" class="tab-content">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 4: Pusat Produksi Media</h3>
+                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Produksi Media Video:</strong> Produksi konten video edukatif. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Produksi Media Audio:</strong> Perekaman podcast, narasi, dan audiobook. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Produksi Animasi:</strong> Pembuatan animasi 2D dan 3D. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Produksi Multimedia:</strong> Pengembangan modul e-learning dan aplikasi. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Produksi Media Cetak:</strong> Desain dan cetak bahan ajar fisik. </div>
+                    </div>
+                </div>
+                <div id="floor-5" class="tab-content">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 5: Pengembangan Sistem Instruksional</h3>
+                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Konsultasi Kurikulum:</strong> Pendampingan pengembangan kurikulum. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Desain Instruksional:</strong> Perancangan bahan ajar dan alur pembelajaran. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Klinik RPP:</strong> Review dan pengembangan Rencana Pelaksanaan Pembelajaran. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Evaluasi Media:</strong> Penilaian efektivitas media pembelajaran. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Evaluasi Hasil Belajar:</strong> Analisis hasil asesmen siswa. </div>
+                    </div>
+                </div>
+                <div id="floor-6" class="tab-content">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Fasilitas Lantai 6: Manajemen & Operasional</h3>
+                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Administrasi & Manajemen:</strong> Pusat kegiatan administratif dan operasional PSB. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Pengelola LMS:</strong> Manajemen sistem Learning Management System. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Server:</strong> Pusat infrastruktur teknologi informasi. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Ruang Rapat:</strong> Kegiatan koordinasi internal dan pertemuan mitra. </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm"><strong>Rooftop:</strong> Area terbuka serbaguna untuk kegiatan informal. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="kontak" class="bg-gray-800 text-white py-12 mt-16"></footer>
+    
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+    <div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+
+    <script src="app.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(item => item.classList.remove('active'));
+                tab.classList.add('active');
+                
+                const targetId = `floor-${tab.dataset.floor}`;
+                contents.forEach(content => {
+                    content.classList.remove('active');
+                    if (content.id === targetId) {
+                        content.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

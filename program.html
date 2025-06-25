@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Program Kami - EduVerse Learning Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(45deg, #1e40af, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .nav-link-active { color: #3b82f6; font-weight: 600; border-bottom: 2px solid #3b82f6; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-atom text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-blue-700">EduVerse</h1>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                <a href="tentang.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Tentang</a>
+                <a href="program.html" class="text-sm font-medium transition duration-300 nav-link-active">Program</a>
+                <a href="fasilitas.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Fasilitas</a>
+                <a href="kontak.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Kontak</a>
+            </nav>
+            <div id="authArea"></div>
+        </div>
+    </header>
+
+    <main class="py-16 px-4">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold gradient-text mb-3">Program Unggulan EduVerse</h1>
+                <p class="text-lg text-gray-600">Dirancang untuk memperkuat fungsi PSB sebagai ruang yang dinamis, inklusif, dan mendorong kolaborasi. </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">GOSSIP: Gathering of Students and Speakers Inspiring Progress</h2>
+                    <p class="text-gray-600 mb-4">Sebuah program kreatif dalam format talk show sebagai ruang interaksi santai dan terbuka antar siswa, guru, dan mahasiswa untuk membahas isu-isu pendidikan.  Diadakan secara berkala dan disiarkan melalui kanal digital untuk menjangkau audiens nasional. </p>
+                    <h4 class="font-semibold text-gray-700 mb-2">Manfaat Program:</h4>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>Membangun student voice dalam sistem pendidikan. </li>
+                        <li>Mengasah kemampuan komunikasi dan berpikir kritis peserta didik. </li>
+                        <li>Menumbuhkan minat generasi muda terhadap isu-isu aktual pendidikan. </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">ShowUp!: Showcase of Unlimited Projects</h2>
+                    <p class="text-gray-600 mb-4">Program kreatif berskala nasional untuk mengapresiasi dan mempublikasikan hasil karya peserta didik dan pendidik dari berbagai jenjang.  Diselenggarakan setiap tahun dengan format pameran hibrida (fisik dan digital). </p>
+                     <h4 class="font-semibold text-gray-700 mb-2">Manfaat Program:</h4>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>Menjadi ajang apresiasi karya kreatif dari berbagai daerah. </li>
+                        <li>Menjadi ekosistem portofolio pendidikan Indonesia yang terbuka. </li>
+                        <li>Mendorong integrasi antara produksi media dan pembelajaran. </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-2">TEMU: Temukan dan Ukur</h2>
+                    <p class="text-gray-600 mb-4">Program berbasis sistem dashboard digital yang dirancang untuk membantu peserta didik, guru, dan orang tua menavigasi proses belajar secara personal dan reflektif.  Motto kami: "Kita temukan progres kita, ya." </p>
+                    <h4 class="font-semibold text-gray-700 mb-2">Manfaat Program:</h4>
+                    <ul class="text-sm text-gray-600 list-disc list-inside space-y-1">
+                        <li>Membantu peserta didik merencanakan perjalanan belajarnya secara personal. </li>
+                        <li>Memberikan akses yang jelas bagi guru dan orang tua untuk memantau perkembangan. </li>
+                        <li>Mengubah evaluasi menjadi proses yang menyenangkan, visual, dan bermakna. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="kontak" class="bg-gray-800 text-white py-12 mt-16"></footer>
+    
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+    <div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

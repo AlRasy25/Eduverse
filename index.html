@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse Learning Center - Facilitating the Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Poppins', sans-serif; }
+        .gradient-text { background: linear-gradient(45deg, #1e40af, #3b82f6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .nav-link-active { color: #3b82f6; font-weight: 600; border-bottom: 2px solid #3b82f6; }
+    </style>
+</head>
+<body class="bg-blue-50">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-atom text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold text-blue-700">EduVerse</h1>
+            </a>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-sm font-medium transition duration-300 nav-link-active">Home</a>
+                <a href="tentang.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Tentang</a>
+                <a href="program.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Program</a>
+                <a href="fasilitas.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Fasilitas</a>
+                <a href="kontak.html" class="text-sm font-medium text-gray-600 hover:text-blue-600 transition duration-300">Kontak</a>
+            </nav>
+            <div id="authArea">
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="relative text-center px-6 py-20 md:py-32 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-lg text-blue-600 font-semibold mb-2">facilitating the future</p>
+                <h1 class="text-4xl md:text-5xl font-bold gradient-text mb-4">Selamat Datang di EduVerse Learning Center</h1>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Pusat sumber belajar terintegrasi yang inklusif, imersif, dan inovatif untuk menginspirasi generasi pembelajar sepanjang hayat. </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="fasilitas.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold shadow-lg transition duration-300">
+                        Jelajahi Fasilitas <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="program.html" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg text-base font-semibold shadow-lg transition duration-300">
+                        Lihat Program Kami <i class="fas fa-star ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-8 py-16">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-3xl font-bold gradient-text mb-4">Ekosistem Pendidikan Masa Depan</h2>
+                <p class="text-gray-600 mb-8">EduVerse Learning Center dirancang sebagai pusat pembelajaran terintegrasi dari jenjang TK hingga Perguruan tinggi berskala nasional.  Kami hadir untuk menjawab dinamika pendidikan masa kini dengan menyediakan lingkungan belajar yang visioner, interaktif, dan kolaboratif. </p>
+                <a href="tentang.html" class="text-blue-600 font-semibold hover:underline">Pelajari Visi & Misi Kami &rarr;</a>
+            </div>
+        </section>
+
+        <section class="px-8 py-16 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text inline-block mb-4">Program Unggulan</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Kami merancang program-program inovatif untuk mendorong budaya belajar yang kreatif, reflektif, dan kolaboratif. </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-comments"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">GOSSIP</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Program talk show kreatif sebagai ruang interaksi terbuka untuk membahas isu pendidikan secara kasual dan bermakna. </p>
+                    </div>
+                    <div class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-trophy"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">ShowUp!</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Pameran nasional tahunan untuk mempublikasikan dan mengapresiasi karya terbaik peserta didik dan pendidik dari seluruh jenjang. </p>
+                    </div>
+                    <div class="card-hover bg-gray-50 p-8 rounded-xl border border-gray-200 transition duration-300">
+                        <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">TEMU</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Sistem dashboard digital personal untuk membantu peserta didik, guru, dan orang tua menavigasi dan merefleksikan progres belajar. </p>
+                    </div>
+                </div>
+                 <div class="text-center mt-12">
+                     <a href="program.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-base font-semibold shadow-lg transition duration-300">
+                        Lihat Semua Program
+                    </a>
+                 </div>
+            </div>
+        </section>
+
+        <section class="px-8 py-16 bg-blue-600 text-white">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold mb-2">20.000+</div>
+                        <p class="opacity-80">Target Peserta/Tahun </p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold mb-2">100+</div>
+                        <p class="opacity-80">Target Karya Inovatif </p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold mb-2">50+</div>
+                        <p class="opacity-80">Ruang Belajar & Produksi </p>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-bold mb-2">6</div>
+                        <p class="opacity-80">Lantai Terintegrasi </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak" class="bg-gray-800 text-white py-12">
+        </footer>
+    
+    <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+    <div id="profileModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
